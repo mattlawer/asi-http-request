@@ -50,12 +50,6 @@
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
 }
 
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    [self setNavigationBar:nil];
-	[self setTableView:nil];
-}
-
 - (void)keyboardWillShow:(NSNotification *)notification
 {
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_3_2
